@@ -13,13 +13,14 @@ public class HelloController {
         return "Hello from Spring Boot to Jenkins";
     }
 
-    @GetMapping(value = "/hello")
+    @GetMapping(value = "/good")
     public String sayGood(){
         return "good morning";
     }
 
-    @GetMapping
+    @GetMapping(value = "/hello")
     public String sayHello(String name){
         return "Hello" + name;
     }
+
 }
