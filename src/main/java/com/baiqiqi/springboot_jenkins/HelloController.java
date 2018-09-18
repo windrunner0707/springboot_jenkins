@@ -9,12 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping(value = "/hi")
-    public String sayHello(){
+    public String sayHi(){
         return "Hello from Spring Boot to Jenkins";
     }
 
     @GetMapping(value = "/hello")
     public String sayGood(){
         return "good morning";
+    }
+
+    @GetMapping
+    public String sayHello(String name){
+        return "Hello" + name;
     }
 }
