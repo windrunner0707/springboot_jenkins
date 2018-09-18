@@ -12,4 +12,9 @@ public class HelloController {
     public String sayHello(){
         return "Hello from Spring Boot to Jenkins";
     }
+
+    @GetMapping(value = "/hello")
+    public String sayGood(){
+        return "good morning";
+    }
 }
